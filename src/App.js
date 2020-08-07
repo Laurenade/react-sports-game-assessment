@@ -1,24 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Game from "./components/game/Game";
+import Team from "./components/team/Team";
+import Scoreboard from "./components/scoreboard/Scoreboard";
+import thing1Img from "./assets/images/thing1.jpg";
+import thing2Img from "./assets/images/thing2.jpg";
+import loraxImg from "./assets/images/lorax.jpg";
+import foxSocksImg from "./assets/images/foxinsocks.jpg";
+//import cheers from './assets/sounds/cheers.wav';
+//import slap from './assets/sounds/slp.wav';
 
 function App() {
+  const thing1 = {
+    name: "Thing 1",
+    logoSrc: thing1Img,
+  };
+  const thing2 = {
+    name: "Thing 2",
+    logoSrc: thing2Img,
+  };
+  const lorax = {
+    name: "Lorax",
+    logoSrc: loraxImg,
+  };
+  const foxInSocks = {
+    name: "Fox In Socks",
+    logoSrc: foxSocksImg,
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      Sports Game
+      <Game venue="the Suess Dome!" homeTeam={thing1} visitingTeam={thing2} />
+      <Game
+        venue="the DR DOOM ROOM!"
+        homeTeam={lorax}
+        visitingTeam={foxInSocks}
+      />
+      <Team />
+      <Scoreboard />
     </div>
   );
 }
