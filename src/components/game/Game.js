@@ -1,6 +1,8 @@
 import React from "React";
-import cheers from "./assets/sounds/cheers.wav";
-import slap from "./assets/sounds/slp.wav";
+import Team from "../../components/team/Team";
+import Scoreboard from "../../components/scoreboard/Scoreboard";
+import slap from "../../assets/sounds/slap.wav";
+import cheers from "../../assets/sounds/cheers.wav";
 
 class Game extends React.Component {
   constructor(props) {

@@ -7,10 +7,8 @@ import thing1Img from "./assets/images/thing1.jpg";
 import thing2Img from "./assets/images/thing2.jpg";
 import loraxImg from "./assets/images/lorax.jpg";
 import foxSocksImg from "./assets/images/foxinsocks.jpg";
-//import cheers from './assets/sounds/cheers.wav';
-//import slap from './assets/sounds/slp.wav';
 
-function App() {
+function App(props) {
   const thing1 = {
     name: "Thing 1",
     logoSrc: thing1Img,
