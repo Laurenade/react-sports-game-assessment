@@ -1,4 +1,4 @@
-import React from "React";
+import React from "react";
 import Team from "../../components/team/Team";
 import Scoreboard from "../../components/scoreboard/Scoreboard";
 import slap from "../../assets/sounds/slap.wav";
