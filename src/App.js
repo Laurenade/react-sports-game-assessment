@@ -1,8 +1,6 @@
 import React from "react";
 import "./App.css";
 import Game from "./components/game/Game";
-import Team from "./components/team/Team";
-import Scoreboard from "./components/scoreboard/Scoreboard";
 import thing1Img from "./assets/images/thing1.jpg";
 import thing2Img from "./assets/images/thing2.jpg";
 import loraxImg from "./assets/images/lorax.jpg";
@@ -34,8 +32,6 @@ function App(props) {
         homeTeam={lorax}
         visitingTeam={foxInSocks}
       />
-      <Team />
-      <Scoreboard />
     </div>
   );
 }
